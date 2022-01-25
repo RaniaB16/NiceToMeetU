@@ -38,7 +38,7 @@ Profil.create(
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",
   dream_job: "developer",
-  user: Eva
+  user_id: Eva.id
 )
 
 Profil.create(
@@ -47,7 +47,7 @@ Profil.create(
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",
   dream_job: "developer",
-  user: Karima
+  user_id: Karima.id
 )
 
 Profil.create(
@@ -56,7 +56,7 @@ Profil.create(
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",
   dream_job: "developer",
-  user: Joe
+  user_id: Joe.id
 )
 
 Profil.create(
@@ -65,7 +65,7 @@ Profil.create(
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",
   dream_job: "developer",
-  user: Nadir
+  user_id: Nadir.id
 )
 
 Profil.create(
@@ -74,5 +74,5 @@ Profil.create(
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",
   dream_job: "developer",
-  user: Aurelie
+  user_id: Aurelie.id
 )

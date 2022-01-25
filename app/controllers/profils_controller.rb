@@ -1,7 +1,12 @@
 class ProfilsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @profils = Profil.where(user: current_user)
+    if params[:query].present?
+      @profils = Profil.search(params[:query])
+    else
+      @profils = Profil.all.where(user: current_user)
+    end
   end
 
   def new

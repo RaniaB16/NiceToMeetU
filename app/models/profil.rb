@@ -1,8 +1,12 @@
 class Profil < ApplicationRecord
   belongs_to :user
-  validates :user_id, presence: true
+  validates :user, presence: true
   validates :full_name, presence: true
   validates :actual_job, presence: true
   validates :company, presence: true
   validates :description, presence: true
+
+  def full_name
+    "{full_name.capitalize}"
+  end
 end

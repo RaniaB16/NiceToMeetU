@@ -13,7 +13,6 @@ Eva = User.create(
 Karima = User.create(
   email: "karima@gmail.com",
   password: "123456"
-
 )
 
 Joe = User.create(

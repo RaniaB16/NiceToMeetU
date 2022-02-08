@@ -37,5 +37,4 @@ class ProfilsController < ApplicationController
   def party_params
     params.require(:profil).permit(:user_id, :full_name, :actual_job, :company, :description, :dream_job)
   end
-
 end

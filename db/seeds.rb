@@ -33,7 +33,7 @@ puts "Users created"
 puts "Creating Profils..."
 
 Profil.create(
-  full_name: "Eva Labas",
+  full_name: "Eva LABAS",
   actual_job: "photograph",
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",

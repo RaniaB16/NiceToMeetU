@@ -8,7 +8,6 @@
 User.destroy_all
 Profil.destroy_all
 
-
 Eva = User.create(
   email: "eva@gmail.com",
   password: "123456"

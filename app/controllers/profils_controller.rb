@@ -1,5 +1,5 @@
 class ProfilsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!
 
   def index
     @profils = Profil.all
@@ -10,7 +10,7 @@ class ProfilsController < ApplicationController
   end
 
   def show
-    @profil = Profil.find(params[:id])
+    @profil = Profil.find_by(user_id: current_user.id)
   end
 
   def create
@@ -27,11 +27,7 @@ class ProfilsController < ApplicationController
 
   private
 
-  def find_profil
-    @profil = Profil.find(params[:id])
-  end
-
-  def party_params
+  def profil_params
     params.require(:profil).permit(:user_id, :full_name, :actual_job, :company, :description, :dream_job)
   end
 end

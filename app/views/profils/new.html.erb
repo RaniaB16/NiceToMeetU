@@ -1,0 +1,21 @@
+<form class="new_profil" id="new_profil" action="/profils" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
+  <label for="Situation"> Need some advices ?</label>
+  <input type="checkbox" name="profil[situation]">
+  <label for="profil_name">Full Name</label>
+  <input type="text" name="profil[name]" id="profil_name">
+    <label for="profil_name">Actual Job</label>
+  <input type="text" name="profil[name]" id="profil_name">
+    <label for="profil_name">Company</label>
+  <input type="text" name="profil[name]" id="profil_name">
+  <label for="profil_address">Description</label>
+  <input type="text" name="profil[address]" id="profil_address">
+  <label for="profil_rating">Rating</label>
+  <input type="text" name="profil[rating]" id="profil_rating">
+  <input type="submit" name="commit" value="Create profil" data-disable-with="Create Profil">
+</form>
+    <h2><%= @profil.full_name %></h2>
+    <p><%= @profil.actual_job %></p>
+    <p><%= @profil.company %></p>
+    <p><%= @profil.description %></p>
+    <p><%= @profil.dream_job %></p>

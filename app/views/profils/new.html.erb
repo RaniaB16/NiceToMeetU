@@ -1,21 +1,14 @@
 <form class="new_profil" id="new_profil" action="/profils" accept-charset="UTF-8" method="post">
   <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
-  <label for="Situation"> Need some advices ?</label>
-  <input type="checkbox" name="profil[situation]">
   <label for="profil.full_name">Full Name</label>
   <input type="text" name="profil[full_name]" id="profil.full_name">
     <label for="profil_name">Actual Job</label>
   <input type="text" name="profil[actual_job]" id="profil.actual_job">
-    <label for="profil_name">Company</label>
+    <label for="profil_company">Company</label>
   <input type="text" name="profil[company]" id="profil_company">
-  <label for="profil_description">Description</label>
+  <label for="profil_description">Tell us more about you and your purpose</label>
   <input type="text" name="profil[description]" id="profil_description">
-  <label for="profil_dream_job"> Dream Job <p>Fill only if you're are in professional retraining </p> </label>
+  <label for="profil_dream_job"> Dream Job <p>Please, fill out this field if you are changing careers </p> </label>
   <input type="text" name="profil[rating]" id="profil_rating">
   <input type="submit" name="commit" value="Create profil" data-disable-with="Create Profil">
 </form>
-    <h2><%= @profil.full_name %></h2>
-    <p><%= @profil.actual_job %></p>
-    <p><%= @profil.company %></p>
-    <p><%= @profil.description %></p>
-    <p><%= @profil.dream_job %></p>

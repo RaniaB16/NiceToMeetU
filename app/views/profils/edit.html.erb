@@ -1,10 +1,13 @@
-<form class="new_profil" id="new_profil" action="/profils" accept-charset="UTF-8" method="post">
-  <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
-  <label for="profil_name">Name</label>
-  <input type="text" name="profil[name]" id="profil_name">
-  <label for="profil_address">Address</label>
-  <input type="text" name="profil[address]" id="profil_address">
-  <label for="profil_rating">Rating</label>
-  <input type="number" name="profil[rating]" id="profil_rating">
-  <input type="submit" name="commit" value="Create profil" data-disable-with="Create profil">
-</form>
+<%= form_for(@profil) do |f| %>
+  <%= f.label :full_name %>
+  <%= f.text_field :full_name %>
+  <%= f.label :actual_job %>
+  <%= f.text_field :actual_job %>
+  <%= f.label :company %>
+  <%= f.text_field :company %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :dream_job %>
+  <%= f.text_field :dream_job %>
+  <%= f.submit %>
+<% end %>

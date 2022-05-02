@@ -1,3 +1,8 @@
+<%#= form_for est un helper qui permettra de generer
+ tous les input grâce à des sous-methodes. Ainsi qu'une clé sécurité
+  A besoin d'un objet
+ ici = profil. Si l'objet est prérempli, les infos seront générées => edit. Un patch sera fait
+ autrement ce sera un Post %>
 <%= form_for(@profil) do |f| %>
   <%= f.label :full_name %>
   <%= f.text_field :full_name %>

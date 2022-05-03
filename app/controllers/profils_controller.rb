@@ -10,7 +10,7 @@ class ProfilsController < ApplicationController
   end
 
   def show
-    @profil = Profil.find_by(user_id: current_user.id)
+    @profil = Profil.find(params[:id])
   end
 
   def create
@@ -46,7 +46,7 @@ class ProfilsController < ApplicationController
 
   def profil_params
     # Syntax à respecter
-    params.require(:profil).permit(:nickname, :actual_job, :company, :description, :dream_job)
+    params.require(:profil).permit(:full_name, :actual_job, :company, :description, :dream_job)
   end
 
 end

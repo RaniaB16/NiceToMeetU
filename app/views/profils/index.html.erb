@@ -1,7 +1,7 @@
 <h1> Check all the profils </h1>
 
 <% @profils.each do |profil| %>
-<h2><%= profil.nickname %></h2>
+<h2><%= profil.full_name %></h2>
 <p><%= profil.dream_job %></p>
 <%#obliger de preciser objet après "profil_path au singulier" profil = profil.id %>
 <%= link_to "check this profil", profil_path(profil) %>

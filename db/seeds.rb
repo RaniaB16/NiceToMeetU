@@ -36,7 +36,7 @@ puts "Users created"
 puts "Creating Profils..."
 
 Profil.create(
-  full_name: "Eva LABAS",
+  nickname: "Eva LABAS",
   actual_job: "photograph",
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",
@@ -45,7 +45,7 @@ Profil.create(
 )
 
 Profil.create(
-  full_name: "Karima DENT",
+  nickname: "Karima DENT",
   actual_job: "Acountant",
   company: "SNCF",
   description: "I always wanted to become a developper",
@@ -54,7 +54,7 @@ Profil.create(
 )
 
 Profil.create(
-  full_name: "Joe SUIT",
+  nickname: "Joe SUIT",
   actual_job: "Lawyer",
   company: "Suits Corp",
   description: "I always wanted to become a developper",
@@ -63,7 +63,7 @@ Profil.create(
 )
 
 Profil.create(
-  full_name: "Nadir RIDAN",
+  nickname: "Nadir RIDAN",
   actual_job: "Postman",
   company: "La Poste",
   description: "I always wanted to become a developper",
@@ -72,7 +72,7 @@ Profil.create(
 )
 
 Profil.create(
-  full_name: "Aurélie Unliv",
+  nickname: "Aurélie Unliv",
   actual_job: "Teacher",
   company: "Georges Brassens Highschool",
   description: "I always wanted to become a developper",

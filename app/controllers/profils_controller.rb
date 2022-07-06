@@ -46,7 +46,6 @@ class ProfilsController < ApplicationController
 
   def profil_params
     # Syntax à respecter
-    params.require(:profil).permit(:full_name, :actual_job, :company, :description, :dream_job)
+    params.require(:profil).permit(:actual_job, :company, :description, :dream_job)
   end
-
 end

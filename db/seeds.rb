@@ -9,25 +9,35 @@ User.destroy_all
 Profil.destroy_all
 
 Eva = User.create(
+  first_name: "Eva",
+  last_name: "LABAS",
   email: "eva@gmail.com",
   password: "123456"
 )
 
 Karima = User.create(
+  first_name: "Karima",
+  last_name: "DENT",
   email: "karima@gmail.com",
   password: "123456"
 )
 
 Joe = User.create(
+  first_name: "Joe",
+  last_name: "SUIT",
   email: "joe@gmail.com",
   password: "123456"
 )
 Nadir = User.create(
+  first_name: "Nadir",
+  last_name: "RIDAN",
   email: "nadir@gmail.com",
   password: "123456"
 )
 
 Aurelie = User.create(
+  first_name: "Aurélie",
+  last_name: "UNLIV",
   email: "aurelie@gmail.com",
   password: "123456"
 )
@@ -36,7 +46,6 @@ puts "Users created"
 puts "Creating Profils..."
 
 Profil.create(
-  nickname: "Eva LABAS",
   actual_job: "photograph",
   company: "AllforOne&Co",
   description: "I always wanted to become a developper",
@@ -45,7 +54,6 @@ Profil.create(
 )
 
 Profil.create(
-  nickname: "Karima DENT",
   actual_job: "Acountant",
   company: "SNCF",
   description: "I always wanted to become a developper",
@@ -54,7 +62,6 @@ Profil.create(
 )
 
 Profil.create(
-  nickname: "Joe SUIT",
   actual_job: "Lawyer",
   company: "Suits Corp",
   description: "I always wanted to become a developper",
@@ -63,7 +70,6 @@ Profil.create(
 )
 
 Profil.create(
-  nickname: "Nadir RIDAN",
   actual_job: "Postman",
   company: "La Poste",
   description: "I always wanted to become a developper",
@@ -72,7 +78,6 @@ Profil.create(
 )
 
 Profil.create(
-  nickname: "Aurélie Unliv",
   actual_job: "Teacher",
   company: "Georges Brassens Highschool",
   description: "I always wanted to become a developper",
